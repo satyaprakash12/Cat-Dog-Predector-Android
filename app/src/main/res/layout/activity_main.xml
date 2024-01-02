@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+<ProgressBar
+    android:id="@+id/progressBar"
+    style="?android:attr/progressBarStyleHorizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:indeterminate="true"
+    android:max="50"
+    android:visibility="invisible"
+    android:backgroundTint="@color/white"
+    android:indeterminateTint="#1a09d6"
+    android:layout_marginTop="20dp"></ProgressBar>
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:foreground="@drawable/custom_border"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_height="350dp">
+        <ImageView
+            android:id="@+id/imageView"
+            android:scaleType="fitXY"
+            android:padding="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></ImageView>
+    </LinearLayout>
+    <Button
+        android:id="@+id/uploadImage"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="match_parent"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:background="@drawable/buttonshape"
+        android:drawableRight="@android:drawable/ic_menu_gallery"
+        android:text="Upload Image"
+        android:textColor="@color/white"
+        android:textSize="15sp"></Button>
+    <Button
+        android:id="@+id/captureImage"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="match_parent"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="50dp"
+        android:textSize="15sp"
+        android:layout_gravity="center"
+        android:text="Capture Image"
+        android:textColor="@color/black"
+        android:drawableRight="@android:drawable/ic_menu_camera"
+        android:background="@drawable/button_shape1"></Button>
+
+
+</LinearLayout>
